@@ -40,7 +40,6 @@ module.exports = {
       }
     ]
   },
-  stats: { children: false },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/templates/index.html'),
