@@ -40,6 +40,7 @@ module.exports = {
       }
     ]
   },
+  stats: { children: false },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/templates/index.html'),
@@ -55,7 +56,7 @@ module.exports = {
       ]
     }),
     new ServiceWorkerWebpackPlugin({
-      entry: path.resolve(__dirname, './src/scripts/sw.js')
+      entry: path.resolve(__dirname, 'src/scripts/sw.js')
     }),
     new ImageminWebpackPlugin({
       plugins: [
